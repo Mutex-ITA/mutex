@@ -1,0 +1,346 @@
+@font-face {
+  font-family: Rog;
+  src: url(7032-fontps.ttf);
+}
+
+.rogfont{
+   font-family: Rog;
+}
+
+ @keyframes bg{
+   from{opacity: 0.0;}
+   to {opacity: 0.7;}
+ }
+ @keyframes mutexsymbol{
+   from{opacity: 0.0;}
+   to{opacity: 1.0;}
+ }
+
+ .stack {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+
+.stack span {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  --stack-height: calc(100% / var(--stacks) - 1px);
+  --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+  --clip-top: calc(var(--stack-height) * var(--index));
+  --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+  clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+  animation: stack 840ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+}
+
+.stack span:nth-child(odd) { --glitch-translate: 8px; }
+.stack span:nth-child(even) { --glitch-translate: -8px; }
+
+@keyframes stack {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+    text-shadow: -2px 3px 0 red, 2px -3px 0 rgb(3, 3, 39);
+  };
+  60% {
+    opacity: 0.5;
+    transform: translateX(50%);
+  }
+  80% {
+    transform: none;
+    opacity: 1;
+    text-shadow: 2px -3px 0 red, -2px 3px 0 rgb(3, 3, 39);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -2px 3px 0 red, 2px -3px 0 rgb(4, 4, 36);
+    transform: translate(var(--glitch-translate));
+  }
+  2% {
+    text-shadow: 2px -3px 0 red, -2px 3px 0 rgb(4, 4, 36);
+  }
+  4%, 100% {  text-shadow: none; transform: none; }
+}
+
+.fadein1
+{
+  opacity: 0.0;
+  animation-name: bg;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.fadein2
+{
+  opacity: 0.0;
+  animation-name: bg;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+.fadein3
+{
+  opacity: 0.0;
+  animation-name: bg;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+.m{
+  position: relative;
+  left:0px;
+
+  animation-name: mutexsymbol;
+  animation-duration: 4s;
+}
+.mutex{
+  font-size: 45px;
+  color:white;
+  position: relative;
+  left:-18px;
+  justify-content: center;
+}
+
+.motto{
+  color:white;
+  font-size: 22px;
+  justify-content: center;
+  position: relative;
+  top:148px;
+}
+#about {padding-top:50px;height:auto;width:90%;color: #fff; background-color:#0a0d0f;}
+ #section2 {padding-top:50px;height:auto;width:90%;color: #fff; background-color:#0a0d0f;}
+ #section3 {padding-top:50px;height:auto;width:90%;color: rgb(0, 0, 0); background-color: white;}
+#bgcontainer
+{
+  position: absolute;
+  opacity: 0.7;
+  z-index: -1;
+  top:70px;
+  height: auto;
+  width: 1190px;
+
+  animation-name:bg;
+  animation-duration: 8s;
+}
+.logo{
+  position:relative;
+  display:inline-block;
+  left:30px;
+  top:160px;
+  margin: 0 auto;
+  z-index: 0;
+}
+.logosize
+{
+  width: 250px;
+  height: auto;
+}
+.hashtag{
+  position: relative;
+  top:180px;
+  margin-bottom: 180px;
+}
+.workshop{
+ padding: 8px;
+}
+.headFont{
+  font-size:50px;
+}
+.contentFont{
+  font-size: 25px;
+}
+.aboutc
+{
+  font-size: 26px;
+}
+.abouth
+{
+  font-size:36px;
+}
+.bgvideo
+{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+.bgvideo .caption {
+  z-index: 1;
+  position: absolute;
+  top:0px;
+  color: white;
+  padding: 10px;
+  display: inline;
+}
+.fill{
+  background: none;
+  border: 3px solid;
+  font: inherit;
+  font-size: 15px;
+  line-height: 0.5;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+.fill:hover,
+.fill:focus {
+  color:black;
+  background:rgb(73, 71, 71);
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+.register:hover{
+   color:white;
+   font-style: normal;
+   text-decoration: none;
+}
+
+@media (max-width:600px) {
+.aboutc
+{
+  font-size: 18px;
+}
+.abouth
+{
+  font-size:28px;
+}
+#about {height:auto;width:95%;}
+ #section2 {height:auto;width:95%;}
+ #section3 {height:auto;width:95%;}
+
+  #bgcontainer{
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
+    top:70px;
+    object-fit: cover;
+    height: 400px;
+    width: auto;
+  }
+  .logo{
+    top:130px;
+    left:18px;
+    width:50%;
+    height: auto;
+  }
+  .logosize{
+    width:60%;
+    height: auto;
+  }
+  .m{
+    position: relative;
+    left:20px;
+  }
+  .motto{
+    position: relative;
+    color: white;
+    justify-content: center;
+    font-size: 13px;
+    top:130px;
+    left:20px;
+  }
+  .mutex
+  {
+    left: 6px;
+    font-size: 20px;
+    position: relative;
+    justify-content: center;
+  }
+  .hashtag{
+    position: relative;
+    top:170px;
+    margin-bottom: 120px;
+  }
+  .workshop{
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+  }
+  .headFont
+  {
+    font-size: 18px;
+  }
+  .contentFont
+  {
+    font-size: small;
+  }
+  .bgvideo
+{
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+  transform:scale(1.26);
+
+  position: relative;
+  z-index: 0;
+}
+.bgvideo .caption {
+  z-index: 1;
+  position: absolute;
+  top:0px;
+  color: white;
+  padding: 10px;
+  display: inline;
+}
+
+.fill{
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  font-size: 10px;
+  line-height: 0.5;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+.fill:hover,
+.fill:focus {
+  color:black;
+  background:rgb(73, 71, 71);
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+}
+ body {
+    background-color: black !important;
+    position: relative;
+    overflow: auto;
+  }
+.navbar{
+    background-color:black;
+}
+anim {
+    animation-name:bg;
+    animation-duration: 5s;
+  } 
+ .video-fluid {
+  position: relative;  
+  width: 100%;
+  height: auto;
+}
+.video1{
+  position:relative;
+  display:block;
+  width:100%; 
+}
+.overlay
+{
+  position: absolute;
+}
+.content1{
+  top:80px;
+  right:0;
+}
+.content2{
+  top:150px;
+  right:50px;
+}
+
+.video-container {
+  padding-top:50px;height:auto;width:90%;color: white; background-color:black;
+}

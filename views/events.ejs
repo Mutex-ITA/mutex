@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events-Mutex</title>
+    <link rel = "icon" type = "image/png" href ="/images/Mutex logo black.png">
+    <link rel="stylesheet" href="/css/style1.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+
+        
+        
+    </head>
+    
+        
+        <body class="bg">
+            
+            <div class="header">
+                <div class="menu-bar">
+                  <nav class="navbar navbar-expand-lg navbar-dark">
+                     <a class="navbar-brand" href="#"><img src="/images/Mutex logo black.png" width="70px" height="50px"></a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-tarpost="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i> 
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNav">
+                         <ul class="navbar-nav ml-auto">
+                             <li class="nav-item">
+                               <a class="nav-link" href="#tech">Technical </a>
+                             </li>
+                             <li class="nav-item">
+                               <a class="nav-link" href="#nontech">Non-Technical</a>
+                             </li>
+                             <li class="nav-item">
+                               <a class="nav-link" href="#workshop">Workshops</a>
+                             </li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="#megaevent">Mega Event</a>
+                              </li>
+                         </ul>
+                      </div>
+                   </nav>
+                 </div> 
+             </div>
+         <br><br>
+        
+            <div class="container-fluid" id="megaevent" style="font-family: Open Sans;">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1">
+    
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-12">
+                        <div class="p-4 megaeventimg" style="color:white; background-color: 
+                        #0a0d0f;">
+                        <img src="/images/Assets/MegaEvent-1.png" class="img-fluid eventimg" width="100%" height="70%" style="opacity: 0.8;"/>
+                       <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Welcome to our own authentic version of Champion of the Champions. We have devised an event with a theme that is so global and in trend in the recent times. The top candidates of each competition can enter this round and gain an opportunity to become Invincible! Trust us when we say that this event will be more fun and exotic than any you've ever participated in. Hope you reach this stage. We are waiting for you to experience the NeverBefore event of our own creation.
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1">
+                        
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="container" style="font-family: Open Sans;">
+            <div class="row justify-content-center">
+                
+                <div class="col-md-12" id="workshop">
+                <h2 style="font-weight:700;color: white;">WORKSHOPS</h2>
+                </div>
+                <br><br>
+                <div class="col-md-4">
+                 <div class="card m-3" style="width: 20 rem;">
+                    <img class="card-img-top" src="/images/Assets/Bigdata.png" height="375 px" alt="Card image cap">
+                        <div class="card-body text center">
+                            <h5 style="font-weight:bold">Big Data Workshop</h5>
+                        <p class="card-text">Are u fascinated around the idea of playing around data and numbers? Well, we are conducting a workshop solely with the purpose of teaching Big Data. Book your tickets at the earliest!</p>
+                        <br><br><br>
+                        <div class="card-footer">
+                            <form method="post" action="/form2">
+                                <input type="hidden" name="title" value="bigdata">
+                                <input type="submit" class="btn btn-dark" value="REGISTER">
+                             </form>
+                          </div>
+                        </div>
+                </div>
+                </div>
+                
+                <div class="col-md-4">
+                 <div class="card m-3" style="width: 20 rem;">
+                    <img class="card-img-top" src="/images/Assets/Placement Workshop1.png"  alt="Card image cap" >
+                        <div class="card-body text center">
+                            <h5 style="font-weight:bold">Placement Workshop</h5>
+                        <p class="card-text">Wanna gain a chance to become a member of FAANG or other coveted companies but unsure how to? No worries, we've got that covered. We welcome one and all to the Placement Workshop conducted by the ITA wherein you can gain extremely valuable insight on how to get placed in your dream company.</p>
+                        <div class="card-footer">
+                            <form method="post" action="/form2">
+                                <input type="hidden" name="title" value="Placement">
+                                <input type="submit" class="btn btn-dark" value="REGISTER">
+                             </form>
+                          </div>
+                            
+                        </div>
+                </div>
+                </div>
+                <div class="col-md-4"></div>
+                </div>
+                
+                <div class="col-md-12">
+                <br>
+                <br>
+                </div>
+                <div class="col-md-12" id="tech">
+                    <h2 style="font-weight:700;color: white;">TECHNICAL EVENTS</h2>
+                </div>
+                <br>
+                <br>
+                <div class="card-deck">
+                    <div class="card">
+                      <img src="/images/Assets/Reverse Coding.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Reverse Coding</h5>
+                        <p class="card-text">
+                            Expert in coding? Let's see how you do it the other way round.
+
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form">
+                            <input type="hidden" name="title" value="reversecoding">
+                            <input type="submit" class="btn btn-dark" value="REGISTER">
+                         </form>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="/images/Assets/Paircoding.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Paircoding</h5>
+                        <p class="card-text">Good at coding ? Come lets have a discussion on how the approach is.</p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form2">
+                           <input type="hidden" name="title" value="Paircoding">
+                           <input type="submit" class="btn btn-dark" value="REGISTER">
+                        </form>
+                      </div>
+                    </div>
+                   
+                    <div class="card">
+                      <img src="/images/Assets/debug.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Debug</h5>
+                        <p class="card-text">
+                            Are you a person who loves finding mistakes and glitches? Then this is the right event for you. Apply the same mindset, but find faults in a program and correct it.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form2">
+                            <input type="hidden" name="title" value="Debug">
+                            <input type="submit" class="btn btn-dark" value="REGISTER">
+                         </form>
+                      </div>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="card-deck">
+                    <div class="card">
+                      <img src="/images/Assets/Blindcoding.png" height="60%" width="auto" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Blind Coding</h5>
+                        <p class="card-text">
+                            Feel like you never make Mistakes? Let's see if u can replicate it in the digital world. Code without the most important keyboard tools, the Backspace and the Delete.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form2">
+                            <input type="hidden" name="title" value="Blindcoding">
+                            <input type="submit" class="btn btn-dark" value="REGISTER">
+                         </form>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="/images/Assets/quizo.png" height="320px" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Tech Quiz </h5>
+                        <p class="card-text">As the name suggests indeed, a Mania of the Math world awaits. Strictly for math-prodigies!!</p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form2">
+                           <input type="hidden" name="title" value="Techquiz">
+                           <input type="submit" class="btn btn-dark" value="REGISTER">
+                        </form>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="/images/Assets/softwhere.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Soft-Where? </h5>
+                        <p class="card-text">
+                            Are u someone who likes to post under the skin of applications? Hop on this exhilarating ride and prove ur expertise on the globally recognized softwares in today's applications.  
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form2">
+                            <input type="hidden" name="title" value="softwhere">
+                            <input type="submit" class="btn btn-dark" value="REGISTER">
+                         </form>
+                      </div>
+                    </div>
+
+
+                    </div><br><br>
+                    <div class="row justify-content-center">
+                
+                        <br>
+                        <div class="col-md-4">
+                         <div class="card" style="width: 100%;">
+                            <img class="card-img-top" src="/images/Assets/ui.png" height="350 px" alt="Card image cap">
+                                <div class="card-body text center">
+                                    <h5 style="font-weight:bold">UI/UX Design</h5>
+                                <p class="card-text">Love making useful things look attractive? Here's your chance to do it digitally. Head on and register to this event! We'll see you there.</p>
+                                <br>
+                                <div class="card-footer">
+                                    <form method="post" action="/form2">
+                                        <input type="hidden" name="title" value="ui">
+                                        <input type="submit" class="btn btn-dark" value="REGISTER">
+                                     </form>
+                                  </div>
+                                </div>
+                        </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                          <div class="card">
+                            <img src="/images/Assets/legion.png" height="362 px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="font-weight:bold">Legion</h5>
+                              <p class="card-text">Feel like u got a knack for viewing a problem in multiple angles? Well, here's the chance to prove it. Ride along in this extravagant journey as we hope you could successfully reach the pinnacle.</p>
+                            </div>
+                            <div class="card-footer">
+                              <form method="post" action="/form">
+                                 <input type="hidden" name="title" value="Legion">
+                                 <input type="submit" class="btn btn-dark" value="REGISTER">
+                              </form>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                        
+                    
+                <div class="col-md-12">
+                    <br>
+                    <br>
+                </div>
+                
+                
+                <div class="col-md-12" id="nontech">
+                    <h2 style="font-weight:700;color: white;">NON TECHNICAL EVENTS</h2>
+                </div><br><br>
+                <div class="card-deck">
+                    <div class="card">
+                      <img src="/images/Assets/IPL Auction.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">IPL Auction</h5>
+                        <p class="card-text">
+                            Have you ever wondered that you could create a better team than any of the IPL teams and that you can participate in an auction by yourself? Well, go for it. Bid to Win.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form">
+                            <input type="hidden" name="title" value="IPLAuction">
+                            <input type="submit" class="btn btn-dark" value="REGISTER">
+                         </form>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="/images/Assets/Mathomania.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Mathomania</h5>
+                        <p class="card-text">As the name suggests indeed, a Mania of the Math world awaits. Strictly for math-prodigies!!</p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form2">
+                           <input type="hidden" name="title" value="Mathomania">
+                           <input type="submit" class="btn btn-dark" value="REGISTER">
+                        </form>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="/images/Assets/TreasureHunt2.png" height="53%" width="auto" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Treasure Hunt</h5>
+                        <p class="card-text">
+                            Do you dream of being a Sherlock Holmes or a Jack Sparrow? This is your chance to become them. Hone those detective skills of yours & quench that thirst for treasure to achieve greater glory.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form">
+                            <input type="hidden" name="title" value="Treasurehunt" >
+                            <input type="submit" class="btn btn-dark" value="REGISTER">
+                         </form>
+                      </div>
+                    </div>
+                  </div><br><br>
+                  <div class="card-deck">
+                    <div class="card">
+                      <img src="/images/Assets/marvelquiz.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Marvel Quiz</h5>
+                        <p class="card-text">
+                            An avid fan of Marvel and feeling left out in an IT symposium? Don't worry, we have got one for you too. First time in the history of Mutex, we give you a chance to join the Avengers but you have to prove to be worthy. Can you?
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form">
+                            <input type="hidden" name="title" value="MarvelQuiz">
+                            <input type="submit" class="btn btn-dark" value="REGISTER">
+                         </form>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="/images/Assets/gaming.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Gaming </h5>
+                        <p class="card-text">As the name suggests indeed, a Mania of the Math world awaits. Strictly for math-prodigies!!</p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form">
+                           <input type="hidden" name="title" value="gaming">
+                           <input type="submit" class="btn btn-dark" value="REGISTER">
+                        </form>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="/images/Assets/conexions%20post.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-weight:bold">Connexions </h5>
+                        <p class="card-text">
+                            Always tired of people telling you to not overthink? Ever thought of a place where overthinking would turn out to be constructive? Come one, come all, you are most welcome to show your true potential here.
+                        </p>
+                      </div>
+                      <div class="card-footer">
+                        <form method="post" action="/form">
+                            <input type="hidden" name="title" value="Connexions">
+                            <input type="submit" class="btn btn-dark" value="REGISTER">
+                         </form>
+                      </div>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="row justify-content-center">
+                
+                    <br>
+                    <div class="col-md-4">
+                     <div class="card" style="width: 100%;">
+                        <img class="card-img-top" src="/images/Assets/Photography.png" height="300 px" alt="Card image cap">
+                            <div class="card-body text center">
+                                <h5 style="font-weight:bold">Photography</h5>
+                            <p class="card-text">Have a fascination for nature or a creative mind to make things look remarkable? If so, Take a Snap.</p>
+                            <div class="card-footer">
+                                <form method="post" action="/form2">
+                                    <input type="hidden" name="title" value="Photography">
+                                    <input type="submit" class="btn btn-dark" value="REGISTER">
+                                 </form>
+                              </div>
+                            </div>
+                    </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <br><br>
+            </div>
+         <br><br>    
+        
+        <br><br><br><br>
+        <div>  
+          <footer class="page-footer text-light bg-dark">
+            <br>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+            <div class="col-md-3 mx auto md-4">
+                <h6 class="text-uppercase font-weight-bold">event co-ordinators</h6>
+                <hr class=" md-4 mt-0 d-inline-block mx-auto" style= "width:200px ;height: 5px">
+                <p class="mt-2 text-secondary">
+                    Techincal Events:&nbsp"abcdefgh"<br> 
+                    contact number:&nbsp"1234567890"<br><br>
+                    Non-Techincal Events:&nbsp"abcdefgh"<br> 
+                    contact number:&nbsp"1234567890"<br><br>
+                    Workshops:&nbsp"abcdefgh"<br>
+                    contact number:&nbsp"1234567890"<br>
+                    <br>
+                    <br>
+                    <i class="fas fa-envelope text-white mr-1"></i> : mutex2k21@gmail.com
+                    <br>
+                    <i class="fab fa-instagram text-white mr-1"></i> : ita_mit_india
+                    </p>
+                </div>
+                <div class="col-md-3 mx auto md-4"></div>
+                <div class="col-md-3 mx auto md-4"></div>
+                <div class="col-md-3 mx auto md-4">
+               <center>     <img src="/images/ita.PNG" alt="image" style= "width:150px ;height: 150px" />
+                    <p class="mt-2 text-center text-light">Website designed by ITA tech team</p></center>
+                </div>
+                </div>
+                
+            </div>
+        
+        
+                <div class="footer-copyright text-center py-3">
+                    <p>&copy;Information Technology Assoiciation
+                    </p>
+            </div>
+        
+    </footer>
+     </div>
+        
+    </body>
+</html>

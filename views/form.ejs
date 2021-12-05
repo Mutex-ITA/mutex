@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% if(title === "Treasurehunt"){ %>
+        <title>Registration - Treasure Hunt</title> <!--Add event name here also-->
+       <% } %>
+
+       <%  if(title === "gaming"){ %>
+        <title>Registration - Gaming</title> <!--Add event name here also-->
+       <% } %>
+
+       <%  if(title === "MarvelQuiz"){ %>
+        <title>Registration - Marvel Quiz</title> <!--Add event name here also-->
+       <% } %>
+
+       <%  if(title === "IPLAuction"){ %>
+        <title>Registration - IPL Auction</title> <!--Add event name here also-->
+       <% } %>
+
+       <%  if(title === "Connexions"){ %>
+        <title>Registration - Connexions</title> <!--Add event name here also-->
+       <% } %>
+
+       <%  if(title === "reversecoding"){ %>
+        <title>Registration - Reverse Coding</title> <!--Add event name here also-->
+       <% } %>
+       
+       <%  if(title === "Legion"){ %>
+        <title>Registration - Legion</title> <!--Add event name here also-->
+       <% } %>
+
+        <link rel = "icon" type = "image/png" href ="/images/Mutex logo black.png">
+        
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+        
+        <style type="text/css">
+  
+    body{
+        background-color: black;
+    }
+    #ui{
+        background-color: #181f24;;
+        font-family: "Open Sans";
+        padding: 15px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        border-radius:4px; 
+        padding-bottom: 50px;
+        opacity: 0.9;
+    }
+    #ui label,h2{
+        color:#fff;
+    }
+    div{
+        animation-iteration-count: 1;
+    }
+    
+    .anim{
+        
+        animation: mymove 1s;
+    }
+    
+            .cont{
+                margin-top:20px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+     .navbar{
+    background-color:black;
+    }
+            .about{
+                
+                padding-left:10px;
+                padding-right:10px;
+                padding-top:5px;
+                padding-bottom: 20px;
+                color: white;
+                font-size: 22px;
+            }  
+          
+    @keyframes mymove {
+
+        0% {
+                opacity: 0;
+            }
+        10%{
+            opacity: 0.1;
+        }
+            20% {
+                opacity: 0.2;
+            }
+        30%{
+            opacity: 0.3;
+        }
+        40%{
+            opacity: 0.4;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        60%{
+            opacity: 0.6;
+        }
+        70%{
+            opacity: 0.7;
+        }
+        80%{
+            opacity: 0.8;
+        }
+        90%{
+            opacity: 0.9;
+        }
+}
+        </style>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+            
+          <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="header">
+            <div class="menu-bar">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#"><img src="/images/Mutex%20logo%20black.png" width="70px" height="50px"></a>
+</nav>
+</div>
+</div>
+        
+        <div class="container">
+            <% if(title === "Treasurehunt"){ %>
+            <h1 style="color:white">Treasure Hunt:</h1><br>
+            <hr > 
+            <div class="row">
+                <div class="col-lg-6">
+                    
+                <img class="cont" src="/images/Assets/TreasureHunt2.png" width="60%" height="auto">
+                    
+                 <h2>Instructions:</h2><br> 
+                    <p class="about">
+                    1)Treasure Hunt is a group event and each participating group can have maximum 3 members<br>
+                    2)Each team will be given a hint to spot within campus wherein which the hint for next spot will be hidden.<br>
+                    3)The team need to hunt for cascading hints that would eventually lead them to the treasure.<br>
+                    4)Only one team amongst many could go home with the treasure. 
+                    </p>
+            <% } %>   
+            
+            <%  if(title === "gaming"){ %>
+                <h1 style="color:white">Gaming:</h1><br>
+                <hr > 
+                <div class="row">
+                    <div class="col-lg-6">
+                        
+                    <img class="cont" src="/images/Assets/gaming.png" width="100%" height="auto">
+                        
+                     <h2>Instructions:</h2><br> 
+                        <p class="about">
+                         1) Signup with your teammates to join and play Pubg.<br> 2)A room will be created and id will be circulated to the participants and the game will commence.
+                        </p>
+                <% } %> 
+                
+                <%  if(title === "Connexions"){ %>
+                    <h1 style="color:white">Connexions:</h1><br>
+                    <hr > 
+                    <div class="row">
+                        <div class="col-lg-6">
+                            
+                        <img class="cont" src="/images/Assets/conexions post.png" width="100%" height="auto">
+                            
+                         <h2>Instructions:</h2><br> 
+                            <p class="about">
+                            1) A group event with maximum 3 members per team.<br>2) Will be provided with a set of connected images that could mean something related to technical concepts or it may be in general.<br>3) The team decrypting and cracking the most answers will be rewarded.
+                            </p>
+                    <% } %> 
+                
+                    <%  if(title === "MarvelQuiz"){ %>
+                        <h1 style="color:white">Marvel Quiz:</h1><br>
+                        <hr > 
+                        <div class="row">
+                            <div class="col-lg-6">
+                                
+                            <img class="cont" src="/images/Assets/marvelquiz.png" width="100%" height="auto">
+                                
+                             <h2>Instructions:</h2><br> 
+                                <p class="about">
+                                    1) A group event with maximum 3 members per team.<br> 2) Participant will be provided with an ample number of questions that is factually relevant to the Marvel Cinematic Universe.<br>3) The participant answering the most questions within time constraint will be qualified for the next round.   
+
+                                </p>
+                        <% } %> 
+                    
+                        <%  if(title === "IPLAuction"){ %>
+                            <h1 style="color:white">IPL Auction:</h1><br>
+                            <hr > 
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    
+                                <img class="cont" src="/images/Assets/IPL Auction.png" width="100%" height="auto">
+                                    
+                                 <h2>Instructions:</h2><br> 
+                                    <p class="about">
+                                        Round 1:<br>
+                                        Prelims Quiz - General IPL quiz. Only captain of the team can attend the quiz.<br>
+                                        Round 2:<br>
+                                        1) Each team will be assigned an ipl team on a lottery basis and a purse amount.<br>2) Players list will be casted and can be bid according to the base price.<br>3) Whichever team buys the most balanced and powerful team will be declared the winner.  
+    
+                                    </p>
+                            <% } %> 
+
+                            <%  if(title === "reversecoding"){ %>
+                                <h1 style="color:white">Reverse Coding:</h1><br>
+                                <hr > 
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        
+                                    <img class="cont" src="/images/Assets/Reverse Coding.png" width="100%" height="auto">
+                                        
+                                     <h2>Instructions:</h2><br> 
+                                        <p class="about">
+                                            Reverse coding is a team event of max 3 members where the team will be provided with an IDE to try out various test cases. <br>So the agenda is that the team should come up with the hidden algorithm that provides them the outputs for the respective test cases. You have to crack and code the program that has produced the corresponding outputs.
+        
+                                        </p>
+                                <% } %> 
+
+                                <%  if(title === "Legion"){ %>
+                                    <h1 style="color:white">Legion:</h1><br>
+                                    <hr > 
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            
+                                        <img class="cont" src="/images/Assets/legion.png" width="100%" height="auto">
+                                            
+                                         <h2>Instructions:</h2><br> 
+                                            <p class="about">
+                                                1) Legion is an exquisite event conducted for the very first time.<br>2) The candidates will be asked to make a group of either 2 or 3 a team.<br>3) Depending on the size of the group, the number of solutions for a problem is validated.<br>4) The teams solving problems in exactly the number of ways that the team size is of proceeds to further levels.
+                                            </p>
+                                    <% } %> 
+                </div>
+                
+                <div class="col-lg-6 anim">
+                    <div id="ui">
+                        
+                        <h2 class="text-center">REGISTERATION FORM</h2>
+                     
+                        <form class="form-group" method="post" action="/success">
+                           <div class="row">
+                               <div class="col-6">
+                            <input type="hidden" name="event" value="<%= title %>">       
+                            <label>Team Leader:</label> 
+                            <input type="text" name="name" class="form-control" placeholder="name" required ></div>
+                            <div class="col-6">
+                            <label>Roll no:</label> 
+                            <input type="text" name="rollno" class="form-control" placeholder="rollno" required>
+                            </div></div>
+                            <br>
+                            
+                            <label>Team Members:</label> 
+                            <div class="row">
+                                <div class="col">
+                                    
+                             <label>Name</label> 
+                             <input type="text" name="name1" class="form-control" placeholder="Member1" ></div>
+                             <div class="col">
+                             <label>Roll no</label> 
+                             <input type="text" name="rollno1" class="form-control" placeholder="rollno">
+                             </div></div>
+                            <br>
+                             <div class="row">
+                                <div class="col">
+                                    
+                             <input type="text" name="name2" class="form-control" placeholder="Member2" ></div>
+                             <div class="col">
+                             <input type="text" name="rollno2" class="form-control" placeholder="rollno">
+                             </div></div>
+                             <br>
+                             <% if(title==="gaming") { %>
+                                <div class="row">
+                                    <div class="col">
+                                        
+                                 <input type="text" name="name3" class="form-control" placeholder="Member3" ></div>
+                                 <div class="col">
+                                 <input type="text" name="rollno3" class="form-control" placeholder="rollno">
+                                 </div></div>
+                                 <br>
+                               <% }  %>
+
+                             <br><br>
+                            <label style="font-size:18px">Team Leader's Info </label><br>
+                            <label for="dept">Department</label>
+                            <select name="dept" class="form-control" required>
+                                <option default>Select Department</option>
+                                <option value="Information Technology">Information Technology</option>
+                                <option value="Computer science">Computer science</option>
+                                <option value="Electronics and communication">Electronics and communication</option>
+                                <option value="Electronics and instrumentation">Electronics and instrumentation</option>
+                                <option value="Rubber and Plastic Technology">Rubber and Plastic Technology</option>
+                                <option value="Aeronautical Engineering">Aeronautical Engineering</option>
+                                <option value="Production Technology">Production Technology</option>
+                                <option value="Automobile Engineering">Automobile Engineering</option>
+                                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            </select>
+                            <br>
+                            <label>E-mail</label> 
+                            <input type="email" name="email" class="form-control" placeholder="enter email id" required>
+                            <br>
+                            <label>Phone number</label> 
+                            <input type="text" name="phone" class="form-control" placeholder="enter phone number" required>
+                            <br>
+                            <center><div style="justify-content: center;">
+                                <button type="submit" class="btn btn-light">SUBMIT</button>
+                             </div></center> 
+                    
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <br>
+        <footer class="page-footer text-light bg-dark">
+            <br>
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+            <div class="col-md-3 mx auto md-4">
+                <h6 class="text-uppercase font-weight-bold">event co-ordinators</h6>
+                <hr class=" md-4 mt-0 d-inline-block mx-auto" style= "width:200px ;height: 5px">
+                <p class="mt-2 text-secondary">
+                    Techincal Events:&nbsp"abcdefgh"<br> 
+                    contact number:&nbsp"1234567890"<br><br>
+                    Non-Techincal Events:&nbsp"abcdefgh"<br> 
+                    contact number:&nbsp"1234567890"<br><br>
+                    Workshops:&nbsp"abcdefgh"<br>
+                    contact number:&nbsp"1234567890"<br>
+                    <br>
+                    <br>
+                    <i class="fas fa-envelope text-white mr-1"></i> : mutex2k21@gmail.com
+                    <br>
+                    <i class="fab fa-instagram text-white mr-1"></i> : ita_mit_india
+                    </p>
+                </div>
+                <div class="col-md-3 mx auto md-4"></div>
+                <div class="col-md-3 mx auto md-4"></div>
+                <div class="col-md-3 mx auto md-4">
+               <center>     <img src="/images/ita.PNG" alt="image" style= "width:150px ;height: 150px" />
+                    <p class="mt-2 text-center text-light">Website designed by ITA tech team</p></center>
+                </div>
+                </div>
+                
+            </div>
+        
+        
+                <div class="footer-copyright text-center py-3">
+                    <p>&copy;Information Technology Assoiciation
+                    </p>
+            </div>
+        
+    </footer>
+    </body>
+</html>
