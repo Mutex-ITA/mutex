@@ -474,10 +474,8 @@ app.get("/gaming", function (req, res) {
   res.render("gaming", { title: "gaming" });
 });
 
-let port = process.env.PORT;
-if(port == null || port == "")
-port = 8080;
-app.listen(port, function () {
+
+app.listen(process.env.PORT || 3000, function () {
   console.log("server has been started successfully");
 });
 
