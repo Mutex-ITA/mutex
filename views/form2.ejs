@@ -33,9 +33,9 @@
         <% if(title === "Mathomania"){ %>
             <title>Registration - Math-O-Mania</title> <!--Add event name here also-->
         <% } %>
-
-        <% if(title === "Photography"){ %>
-            <title>Registration - Photography</title> <!--Add event name here also-->
+        
+        <% if(title === "gd"){ %>
+            <title>Registration - Group Discussion</title> <!--Add event name here also-->
         <% } %>
 
         <% if(title === "ui"){ %>
@@ -180,7 +180,23 @@
                     <p class="about">
                        Details will be shared through the mail.
                     </p>
-            <% } %>   
+            <% } %>
+            
+            <% if(title === "gd"){ %>
+            <h1 style="color:white">Group Discussion:</h1><br>
+            <hr > 
+            <div class="row">
+                <div class="col-lg-6">
+                    
+                <img class="cont" src="/images/Assets/GD.png" width="60%" height="auto">
+                    
+                 <h2>Instructions:</h2><br> 
+                    <p class="about">
+                       The base theme of the Group Discussion is what we have acheived , thrived using this 75 years of independence
+                       The GD topic will differ. Competition consist of 2 rounds. Best speaker with meaningful ideas will be selected
+                       as a winner.
+                    </p>
+            <% } %>  
               
                 
                 <% if(title === "Paircoding"){ %>
@@ -269,19 +285,6 @@
                                             </p>
                                     <% } %>
 
-                                    <% if(title === "Photography"){ %>
-                                        <h1 style="color:white">Photography:</h1><br>
-                                        <hr > 
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                
-                                            <img class="cont" src="/images/Assets/Photography.png" width="100%" height="auto">
-                                                
-                                             <h2>Instructions:</h2><br> 
-                                                <p class="about">
-                                                    1) Once you register for the photography contest, you will receive a confirmation mail.<br>2) You will have to send your snap to that particular mail.<br>3) The jury will decide the top 3 and will post it on the instagram page.<br>4) Highest number of likes among the top 3 will be declared as the winner.    
-                                                </p>
-                                        <% } %>
 
                                         <% if(title === "ui"){ %>
                                             <h1 style="color:white">UI/UX Design:</h1><br>
